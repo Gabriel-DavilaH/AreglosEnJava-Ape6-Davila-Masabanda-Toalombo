@@ -1,91 +1,118 @@
-# 📁 Manejo de Archivos en Java – Guía APE
+# ☕ Arreglos en Java – Ejercicios prácticos
 
 <div align="center">
 
-### | Programación en Java
+### Búsqueda, análisis y manipulación de arreglos
 
 ![Java](https://img.shields.io/badge/Java-ED8B00?style=for-the-badge&logo=openjdk&logoColor=white)
-![File Handling](https://img.shields.io/badge/File_Handling-2C3E50?style=for-the-badge)
-![Status](https://img.shields.io/badge/Estado-Desarrollo-success?style=for-the-badge)
+![Arrays](https://img.shields.io/badge/Arrays-2C3E50?style=for-the-badge)
+![Estado](https://img.shields.io/badge/Estado-Completado-success?style=for-the-badge)
 
-**Lectura • Escritura • Procesamiento • Validación de archivos**
+**Programación en Java | Ejercicios prácticos**
 
 </div>
 
 ---
 
-## 📖 Descripción del proyecto
+## 📖 Descripción
 
-Este repositorio contiene el desarrollo de diez ejercicios prácticos de la segunda parte de la Guía APE de Java, enfocados en el manejo de archivos de texto.
+Este repositorio contiene tres ejercicios prácticos desarrollados en Java, enfocados en el manejo y procesamiento de arreglos unidimensionales.
 
-Mediante diferentes situaciones y problemas prácticos, se aplican herramientas de Java para crear, escribir, leer, modificar y procesar información almacenada en archivos `.txt`.
-
-Los ejercicios permiten fortalecer los conocimientos sobre el manejo de ficheros, el procesamiento de datos, la utilización de excepciones y la implementación de operaciones de entrada y salida.
+Los ejercicios permiten aplicar diferentes operaciones sobre arreglos, como búsqueda de elementos, conteo de repeticiones, identificación de valores máximos y mínimos, cálculo de promedios y manipulación de datos mediante la biblioteca `java.util.Arrays`.
 
 ## 🎯 Objetivo general
 
-Desarrollar programas en Java que permitan gestionar información mediante archivos de texto, aplicando clases como `File`, `FileWriter`, `BufferedWriter`, `FileReader` y `BufferedReader`, junto con estructuras de control y validaciones.
-
-## 🧠 Contenidos y tecnologías
-
-| Herramienta | Aplicación |
-|---|---|
-| `File` | Comprobar y gestionar archivos |
-| `FileWriter` | Escribir información |
-| `BufferedWriter` | Escribir y agregar registros |
-| `FileReader` | Leer archivos carácter por carácter |
-| `BufferedReader` | Leer información línea por línea |
-| `read()` | Leer caracteres |
-| `readLine()` | Leer líneas de texto |
-| `IOException` | Controlar errores de entrada y salida |
-| `try-catch` | Gestionar excepciones |
-| `append` | Agregar información sin sobrescribir |
+Fortalecer los conocimientos sobre el uso de arreglos en Java mediante la implementación de algoritmos que permitan buscar, comparar, ordenar, copiar y procesar información utilizando estructuras de control y métodos especializados.
 
 
-*La estructura es una propuesta de organización para los archivos fuente y sus respectivos archivos de datos.*
+## 📚 Desarrollo de los ejercicios
 
-## ⚙️ Requisitos para ejecutar los programas
+### 🔎 Ejercicio 1. Búsqueda y conteo
 
-- Java JDK instalado.
-- Visual Studio Code, IntelliJ IDEA o Eclipse.
-- Extensión de Java para Visual Studio Code (si se utiliza este editor).
-- Archivos de texto correspondientes a cada ejercicio.
+**Tema:** Búsqueda de elementos en arreglos.
 
-## ▶️ Ejecución
+**Descripción:**
 
-1. Clonar el repositorio:
+Dado el arreglo:
 
-```bash
-git clone URL_DEL_REPOSITORIO
+```java
+int[] numeros = {14, 7, 25, 3, 18, 7, 30};
 ```
 
-2. Abrir el proyecto en el entorno de desarrollo.
+Desarrollar un programa que solicite un número por teclado y determine cuántas veces aparece dentro del arreglo. También deberá mostrar su primera posición.
 
-3. Seleccionar la carpeta del ejercicio que se desea ejecutar.
+Si el número no existe, deberá mostrar el mensaje `No existe`, utilizando `posicion = -1` como indicador de búsqueda fallida.
 
-4. Verificar que el archivo `.txt` correspondiente esté disponible.
+**Conceptos aplicados:**
 
-5. Ejecutar la clase principal `Main.java`.
+- Arreglos de tipo entero.
+- Entrada de datos con `Scanner`.
+- Recorrido mediante `for`.
+- Comparación con `if`.
+- Contador de coincidencias.
+- Búsqueda de la primera posición.
 
-6. Comprobar los resultados en la consola y los cambios realizados en los archivos de texto.
+### 📊 Ejercicio 2. Máximo y mínimo con arreglos paralelos
 
+**Tema:** Comparación de elementos y procesamiento de arreglos paralelos.
 
-## 👨‍💻 Integrantes
+**Descripción:**
+
+Dados los siguientes arreglos:
+
+```java
+String[] nombres = {"Ana", "Luis", "Marta", "Pedro"};
+int[] notas = {15, 8, 18, 11};
+```
+
+Desarrollar un programa que identifique al estudiante con la nota más alta y más baja, mostrando sus respectivos nombres y calificaciones.
+
+Además, deberá calcular el promedio general de las notas y presentarlo con dos decimales.
+
+**Conceptos aplicados:**
+
+- Arreglos paralelos.
+- Variables `posMax` y `posMin`.
+- Comparación de valores.
+- Acumuladores.
+- Cálculo de promedios.
+- Formato decimal con `printf()`.
+
+### ⚙️ Ejercicio 3. Integrador con java.util.Arrays
+
+**Tema:** Copia, ordenamiento y búsqueda en arreglos.
+
+**Descripción:**
+
+Dado el siguiente arreglo:
+
+```java
+int[] datos = {14, 7, 25, 3, 18};
+```
+
+Desarrollar un programa que cree una copia independiente utilizando `Arrays.copyOf()`, ordene únicamente la copia con `Arrays.sort()` y muestre ambos arreglos mediante `Arrays.toString()`.
+
+Finalmente, deberá identificar el segundo número mayor y buscar la posición del número 14 utilizando `Arrays.binarySearch()`.
+
+---
+
 
 | # | Integrante |
 |:-:|:---|
 | 01 | **Toalombo Punina Jeremy Patricio**  |
 | 02 | **Dávila Hernández Gabriel Marcelo**  |
 | 03 | **Masabanda Chasiluisa Jeremy Isaac** |
-
 ---
 
 <div align="center">
 
-### ☕ JAVA | MANEJO DE ARCHIVOS
+### 💻 PROGRAMACIÓN EN JAVA
 
-**Aprender • Practicar • Programar**
+**Analizar • Resolver • Programar**
 
-*Segunda parte de la Guía APE de Java*
+*Ejercicios prácticos sobre arreglos unidimensionales*
 
 </div>
+
+
+
